@@ -1,0 +1,9 @@
+README.md
+setup.py
+book.egg-info/PKG-INFO
+book.egg-info/SOURCES.txt
+book.egg-info/dependency_links.txt
+book.egg-info/requires.txt
+book.egg-info/top_level.txt
+utils/__init__.py
+utils/scraper.py
