@@ -43,3 +43,5 @@ class Scraper:
         '''
         """This function locates the product pages and then collects the URL of each page."""
         self.driver.execute_script("window.scrollBy(0,500)")
+
+    def book_preview(self, xpath: str = '//*[@id="p_11568365"]/div/div[1]/div/a/img'): 
