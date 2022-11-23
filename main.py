@@ -7,3 +7,5 @@ if __name__ == '__main__':
     time.sleep(5)
     bot.best_sellers()
     time.sleep(5)
+    bot.scroll()
+    time.sleep(5)

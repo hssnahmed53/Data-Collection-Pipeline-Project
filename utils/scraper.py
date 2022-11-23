@@ -24,7 +24,7 @@ class Scraper:
             accept_cookies = self.driver.find_element(By.XPATH, xpath)
             accept_cookies.click()
     
-    def best_sellers (self, xpath: str = '//*[@id="pagesmain"]/div[3]/header[2]/a'):
+    def best_sellers (self, xpath: str = '//*[@id="pagesmain"]/div[3]/header[4]/a'):
         
             '''
             Finds and clicks the "See more" button for the best sellers
@@ -36,4 +36,10 @@ class Scraper:
             '''
             best_sellers = self.driver.find_element(By.XPATH, xpath)
             best_sellers.click()
-    
+
+    def scroll(self):
+        '''
+        Scrolls the page
+        '''
+        """This function locates the product pages and then collects the URL of each page."""
+        self.driver.execute_script("window.scrollBy(0,500)")
